@@ -35,7 +35,6 @@ nav a:hover {
     color: #f4f4f4; 
 }
 
-
 .container {
     width: 80%;
     margin: auto;
@@ -43,4 +42,34 @@ nav a:hover {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+}
+
+.contacto-imagen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacto {
+    flex: 1;
+    padding: 20px;
+}
+
+.imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #147879;
 }
