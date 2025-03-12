@@ -1,18 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Sansation;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #2c3e50;
-    background-image: url('../Imágenes/fondo.jpg');
+    background-color: #036763;
+    background-image: url("../Imágenes/fondo.jpg");
     background-size: cover; 
     background-position: center;
     color: white;
     text-align: center;
     padding: 1em;
+    display:flex;
+    justify-content: flex-start;
+    gap: 700px;
 }
 
 nav {
@@ -72,4 +75,9 @@ footer{
     display: flex;
     justify-content: center;
     background-color: #147879;
+}
+
+@font-face {
+    font-family: Sansation;
+    src: url(Recursos/Sansation_Bold.ttf);
 }
