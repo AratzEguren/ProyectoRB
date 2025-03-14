@@ -18,7 +18,7 @@ header {
     padding: 2em;
     display: flex;
     justify-content: flex-start;
-    gap: 610px;
+    gap: 630px;
     z-index: 1000;
 }
 
@@ -101,4 +101,11 @@ footer{
 
 #parrafo1intro{
     margin-left: 20%;
+}
+
+section{
+    display: flex;
+    justify-content: flex-start;
+    gap:15%;
+    padding: 1%;
 }
