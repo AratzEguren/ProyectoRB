@@ -8,31 +8,37 @@
    
 </head>
 <body>
-    <header>
-       <img src="Imágenes/imageRB.png" width="105" height="105"/><h1>Proyecto RovoBank</h1>
-    </header>
-       <nav>
+<header>
+    <div class="logo">
+    <img src="Imágenes/imageRB.png" width="105" height="105"/>
+    </div>
     
-        <a href="index.html" >Inicio</a>
-    
-        <a href="./HTML/contexto.html">Contexto</a>
-  
-        <a href="./HTML/objetivos.html">Objetivos</a>
-  
-        <a href="./HTML/planificacion.html">Planificación</a>
-
-        <a href="./HTML/recursos.html">Recursos</a>
-   
-        <a href="./HTML/presupuesto.html">Presupuesto</a>
-   
-        <a href="./HTML/seguimiento.html">Seguimiento</a>
-   
-        <a href="./HTML/evaluacion.html">Evaluación</a>
-   
-        <a href="./HTML/documentacion.html">Documentación técnica</a>
-
+    <h1>Proyecto RovoBank</h1>
+</header>
+<nav class="navbar">
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
+</script>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="html/contexto.html">Contexto</a>
+    <a href="html/objetivos.html">Objetivos</a>
+    <a href="html/planificacion.html">Planificación</a>
+    <a href="html/recursos.html">Recursos</a>
+    <a href="html/presupuesto.html">Presupuesto</a>
+    <a href="html/seguimiento.html">Seguimiento</a>
+    <a href="html/evaluacion.html">Evaluación</a>
+    <a href="html/documentacion.html">Documentación técnica</a>
+  </div>
 </nav>
-     <img src="Imágenes/introimage.jpg" width="100%" height="550px" />
+<img class="banner-image" src="Imágenes/dubai.jpg" alt="Banner de Objetivos" />
+
+
+
 	 <div class="container">
         <h1 style="margin-left: 40%; font-family: Sansation; color:#036763;  ">Bienvenidos a RovoBank</h1>
         <p style="margin-left: 30%;">________________________________________________________________</p>
@@ -59,15 +65,14 @@
     <div class="contacto-imagen">
         <div class="contacto">
             <h2 style="font-family: Sansation;">Contacto</h2>
-                <p>Direccion: C. Tartanga, 15, 48950 Erandio, Bizkaia
-                    <br>Email: contacto@rovobank.com
-                    <br>Teléfono: 555-949-782</p>
+            <p>Dirección: C. Tartanga, 15, 48950 Erandio, Bizkaia
+                <br>Email: contacto@rovobank.com
+                <br>Teléfono: 555-949-782</p>
         </div>
-         <div class="imagen">
-            <img src="Imágenes\tartangafpexterior.jpg" alt="Imagen de contacto" style="width: 220px;">
+        <div class="imagen">
+            <img src="Imágenes/tartangafpexterior.jpg" alt="Imagen de contacto">
         </div>
     </div>
-
 </footer>
 
 </body>

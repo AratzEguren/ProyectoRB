@@ -10,10 +10,21 @@
 <body>
 
 <header>
+    <div class="logo">
     <img src="../Imágenes/imageRB.png" width="105" height="105"/>
-    <h1 style="margin-left: 150px;">Objetivos</h1>
+    </div>
+    
+    <h1>Objetivos</h1>
 </header>
-<nav>
+<nav class="navbar">
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
+</script>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+  <div class="nav-links">
     <a href="..\index.html">Inicio</a>
     <a href="contexto.html">Contexto</a>
     <a href="objetivos.html">Objetivos</a>
@@ -23,8 +34,10 @@
     <a href="seguimiento.html">Seguimiento</a>
     <a href="evaluacion.html">Evaluación</a>
     <a href="documentacion.html">Documentación técnica</a>
+  </div>
 </nav>
-<img src="../Imágenes/objetivosimage.jpg" width="100%" height="550px"/>
+<img class="banner-image" src="../Imágenes/objetivosimage.jpg" alt="Banner de Objetivos" />
+
 <div>
     <div class="objetivo">
         <h2>Objetivo del proyecto</h2>
@@ -51,7 +64,7 @@
     <section class="objetivos-especificos">
         <h2>Objetivos Específicos</h2>
         <div class="objetivo-item">
-            <h4>Aplicación intuitiva</h4>
+            <h4>Creacion de una aplicación intuitiva</h4>
             <p>Cualquier usuario que nunca ha visto la aplicación podrá entender su uso simplemente con la interfaz
                 que se
                 le
@@ -59,7 +72,7 @@
         </div>
 
         <div class="objetivo-item">
-            <h4>Fácil manejo</h4>
+            <h4>Facilicitar el manejo de la aplicación</h4>
             <p>La aplicación tiene diferentes ventanas cuyo diseño se hizo teniendo en mente la facilidad y la
                 simplicidad.
                 Cada operación principal del banco se puede manejar sencillamente con los varios botonoes y menus
@@ -73,7 +86,7 @@
         </div>
 
         <div class="objetivo-item">
-            <h4>Segura</h4>
+            <h4>Asegurar los datos mas delicados</h4>
             <p>Los datos manejados en un banco son muy delicados. Debido a eso queremos asegurarnos que solo el
                 personal
                 autorizado
@@ -92,7 +105,7 @@
         </div>
 
         <div class="objetivo-item">
-            <h4>Fácil navegación</h4>
+            <h4>Navegación intuitiva</h4>
             <p>Todas las operaciones que se pueden realizar a través de la aplicación están unidas por una interfaz
                 y menus
                 muy
@@ -110,7 +123,7 @@
                 <br>Teléfono: 555-949-782</p>
         </div>
         <div class="imagen">
-            <img src="../Imágenes\tartangafpexterior.jpg" alt="Imagen de contacto" style="width: 220px;">
+            <img src="../Imágenes/tartangafpexterior.jpg" alt="Imagen de contacto">
         </div>
     </div>
 </footer>
