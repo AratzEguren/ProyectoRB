@@ -27,7 +27,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   z-index: 1000;
-  transition: padding 0.3s ease, font-size 0.3s ease;
+  transition: padding 0.3s ease, font-size 0.4s ease;
 }
 
 header h1 {
@@ -36,7 +36,7 @@ header h1 {
   transform: translateX(-50%);
   margin: 0;
   font-family: Sansation;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 header.shrink {
@@ -50,7 +50,7 @@ header.shrink {
   top: 107px;
   background-color: #036763;
   font-family: Arial, sans-serif;
-  font-size: 22px;
+  font-size: 15px;
   z-index: 999;
   margin: 0;
   padding: 0;
