@@ -25,23 +25,17 @@ body.dark-mode .container {
 }
 
 body.dark-mode header,
-body.dark-mode .navbar{
-  background-color: #222;
-}
-
-body.dark-mode header,
-body.dark-mode header *,
-body.dark-mode footer  {
+body.dark-mode footer {
   color: black;
 }
 
 body.dark-mode .nav-links a {
-  color: #E0E0E0;
+  color: black; /* Texto en negro */
 }
 
 body.dark-mode .nav-links a:hover {
-  background-color: #333;
-  color: #fff;
+  color: #0f0f0f; /* Gris oscuro en hover */
+  background-color: #005a43;
 }
 
 body.dark-mode #scrollTopBtn {

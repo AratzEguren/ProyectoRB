@@ -36,18 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
   themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     
-    // Cambiar imagen del logo según el modo
+    // Cambiar imagen del logo y el color de los enlaces del menú según el modo
     if (document.body.classList.contains('dark-mode')) {
       logoImg.src = '../Imágenes/imageBlack.png'; // Imagen para el modo oscuro
+      localStorage.setItem('theme', 'dark'); // Guardar preferencia de tema
     } else {
       logoImg.src = '../Imágenes/imageRB.png'; // Imagen para el modo claro
+      localStorage.removeItem('theme'); // Eliminar preferencia de tema
     }
   });
 
   // Comprobar el modo y establecer la imagen del logo al cargar la página
-  if (document.body.classList.contains('dark-mode')) {
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
     logoImg.src = '../Imágenes/imageBlack.png'; // Imagen para el modo oscuro
   } else {
+    document.body.classList.remove('dark-mode');
     logoImg.src = '../Imágenes/imageRB.png'; // Imagen para el modo claro
   }
 });
