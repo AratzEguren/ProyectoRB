@@ -1,0 +1,272 @@
+/* ------------------- General ------------------- */
+@font-face {
+  font-family: Sansation;
+  src: url(../Recursos/Sansation_Bold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  min-width: 600px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ------------------- Modo Oscuro ------------------- */
+body.dark-mode {
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  color: black;
+}
+
+body.dark-mode .nav-links a {
+  color: black; /* Texto en negro */
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #0f0f0f; /* Gris oscuro en hover */
+  background-color: #005a43;
+}
+
+body.dark-mode #scrollTopBtn {
+  background-color: #444;
+}
+
+/* ------------------- Header ------------------- */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #036763;
+  background-image: url("../Imágenes/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1000;
+  transition: padding 0.3s ease, font-size 0.4s ease, background-color 0.3s ease;
+}
+
+header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: Sansation;
+  font-size: 40px;
+}
+
+header.shrink {
+  padding: 1em;
+  font-size: 25px;
+}
+
+/* ------------------- Navbar ------------------- */
+.navbar {
+  position: sticky;
+  top: 107px;
+  background-color: #036763;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  transition: top 0.3s ease;
+}
+
+.menu-toggle {
+  display: none;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.nav-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px 20px;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
+  margin: 0;
+  border: none;
+}
+
+.nav-links a:hover {
+  background-color: #005a43;
+  color: #f4f4f4;
+}
+
+@media (max-width: 817px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ------------------- Banner ------------------- */
+.banner-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  display: block;
+}
+
+/* ------------------- Contenido ------------------- */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container h2 {
+  font-family: Sansation;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+/* ------------------- Footer ------------------- */
+footer {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #036763;
+  color: #FFFFFF;
+  padding: 2em;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-imagen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.contacto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contacto h2 {
+  font-family: Sansation;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.imagen {
+  flex: 0 0 220px;
+}
+
+.imagen img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+/* ------------------- Otros ------------------- */
+section {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15%;
+  padding: 1%;
+}
+
+#parrafo1intro {
+  margin-left: 20%;
+}
+
+/* ------------------- Scroll Top Button ------------------- */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 100;
+  font-size: 20px;
+  background-color: #036763;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #028c84;
+  transform: scale(1.1);
+}
+
+/* ------------------- Botón Modo Oscuro ------------------- */
+#themeToggle {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 101;
+  background-color: #036763;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+#themeToggle:hover {
+  background-color: #028c84;
+}

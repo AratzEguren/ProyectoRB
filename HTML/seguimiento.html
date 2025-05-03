@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seguimiento - Desarrollo de una App Bancaria</title>
-	<link rel="stylesheet" type="text/css" href="..\Estilos\estiloRB.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seguimiento - Rovobank</title>
+  <link rel="stylesheet" href="../Estilos/seguimientocss.css" type="text/css">
+  <script defer src="../JavaScript/scriptRB.js"></script>
 </head>
 <body>
-<header>
+
+  <header>
     <div class="logo">
-    <img src="../Imágenes/imageRB.png" width="105" height="105"/>
+      <img id="logoImg" src="../Imágenes/imageRB.png" alt="Logo Rovobank" width="105" height="105"/>
     </div>
-    
     <h1>Seguimiento</h1>
-</header>
-<nav class="navbar">
-<script>
-  function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
-  }
-</script>
-  <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
-  <div class="nav-links">
-    <a href="..\index.html">Inicio</a>
-    <a href="contexto.html">Contexto</a>
-    <a href="objetivos.html">Objetivos</a>
-    <a href="planificacion.html">Planificación</a>
-    <a href="recursos.html">Recursos</a>
-    <a href="presupuesto.html">Presupuesto</a>
-    <a href="seguimiento.html">Seguimiento</a>
-    <a href="evaluacion.html">Evaluación</a>
-    <a href="documentacion.html">Documentación técnica</a>
-  </div>
-</nav>
-<img class="banner-image" src="../Imágenes/objetivosimage.jpg" alt="Banner de Objetivos" />
+    <button id="themeToggle" aria-label="Alternar modo oscuro">🌓</button>
+  </header>
 
-<div class="container">
-            
-<h2>Metodología de Seguimiento</h2>
-		<hr>
-			<p>Para asegurar un seguimiento efectivo del proyecto, hemos adoptado una metodología basada en reuniones diarias. En estas sesiones, cada miembro del equipo comparte un resumen de las tareas completadas el día anterior y establece sus objetivos para el día en curso. Este enfoque no solo permite mantener una comunicación constante, sino también ajustar las prioridades de manera ágil.</p>
-
-			<p>Además, para facilitar el seguimiento y la coordinación, hemos decidido utilizar la herramienta Miro. A través de ella, podemos registrar las tareas pendientes, las actividades en curso y las finalizadas. Cada día, durante las reuniones, cada miembro actualiza su estado en la herramienta, proporcionando visibilidad del progreso en tiempo real y asegurando que todos los miembros del equipo tengan una percepción clara y global de lo que se está haciendo.</p>
-
-			<p>Para garantizar la correcta implementación de cada tarea clave, una vez finalizada, se realiza una revisión conjunta. Por ejemplo, al completar el desarrollo de la base de datos, se lleva a cabo una prueba exhaustiva para verificar su funcionamiento y asegurarnos de que cumple con los requisitos establecidos.</p>
-
-			<p>Este enfoque permite un seguimiento detallado y un control completo sobre las tareas realizadas y las pendientes, lo que asegura que el equipo esté siempre alineado y que el progreso se ajuste a los objetivos establecidos.</p>
-        </div>
-
-    <footer>
-    <div class="contacto-imagen">
-        <div class="contacto">
-            <h2 style="font-family: Sansation;">Contacto</h2>
-            <p>Dirección: C. Tartanga, 15, 48950 Erandio, Bizkaia
-                <br>Email: contacto@rovobank.com
-                <br>Teléfono: 555-949-782</p>
-        </div>
-        <div class="imagen">
-            <img src="../Imágenes/tartangafpexterior.jpg" alt="Imagen de contacto">
-        </div>
+  <nav class="navbar">
+    <button class="menu-toggle" aria-label="Abrir menú de navegación">☰ Menú</button>
+    <div class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <a href="contexto.html">Contexto</a>
+      <a href="objetivos.html">Objetivos</a>
+      <a href="planificacion.html">Planificación</a>
+      <a href="recursos.html">Recursos</a>
+      <a href="presupuesto.html">Presupuesto</a>
+      <a href="seguimiento.html" class="active">Seguimiento</a>
+      <a href="evaluacion.html">Evaluación</a>
+      <a href="documentacion.html">Documentación técnica</a>
     </div>
-</footer>
+  </nav>
+
+  <img class="banner-image" src="../Imágenes/EstudioMercado.png" alt="Banner de Seguimiento" />
+
+  <main class="container">
+    <h2>Metodología de Seguimiento</h2>
+    <hr/>
+    <p>Para asegurar un seguimiento efectivo del proyecto, hemos adoptado una metodología basada en reuniones diarias. En estas sesiones, cada miembro del equipo comparte un resumen de las tareas completadas el día anterior y establece sus objetivos para el día en curso.</p>
+
+    <p>Además, utilizamos la herramienta Miro para registrar y visualizar tareas pendientes, en curso y finalizadas. Esto nos proporciona visibilidad en tiempo real y ayuda a mantener la coordinación del equipo.</p>
+
+    <p>Cada tarea clave es revisada de forma conjunta tras su finalización, asegurando el cumplimiento de los requisitos establecidos.</p>
+
+    <p>Este enfoque garantiza un control detallado y una alineación constante con los objetivos del proyecto.</p>
+  </main>
+
+  <button id="scrollTopBtn" title="Ir arriba">↑</button>
+
+  <footer>
+    <div class="contacto-imagen">
+      <div class="contacto">
+        <h2>Contacto</h2>
+        <p>Dirección: C. Tartanga, 15, 48950 Erandio, Bizkaia<br/>
+        Email: contacto@rovobank.com<br/>
+        Teléfono: 555-949-782</p>
+      </div>
+      <div class="imagen">
+        <img src="../Imágenes/tartangafpexterior.jpg" alt="Imagen del centro Tartanga"/>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
