@@ -34,11 +34,93 @@
 </nav>
 </div>
 <img class="banner-image" src="../Imágenes/objetivosimage.jpg" alt="Banner de Objetivos" />
-
-<div >
-            
-            <p>Meter cosas aqui</p>
-        </div>
+<div class="container">
+<h1 class="mainheaderdocumentation">Documentación</h1>
+<hr>
+<p style="margin-left:20%;">Los documentos que se utilizaron durante el proceso de desarrollo de RovoBank están aquí para ver y descargar, en formato PDF.</p>
+<br/>
+ <div class="pdf-container" style="margin-left:34%;">
+    <h2>El diagrama de Entidad/Relación de RovoBank</h2>
+    <br/>
+    <br/>
+    <iframe src="../Docs/ER.pdf" width="600" height="500">
+    </iframe>
+  </div>
+  <br/>
+  <br/>
+  <button class="download-button" id="downloadBtn">Descargar</button>
+  <br/>
+  <br/>
+  <br/>
+  <script>
+       document.getElementById('downloadBtn').addEventListener('click', function() {
+      // Create a temporary anchor element
+      const a = document.createElement('a');
+      // Replace the URL below with either a relative or absolute URL to your PDF file.
+      a.href = '../Docs/ER.pdf';
+      // The download attribute tells the browser to download the file instead of navigating to it.
+      a.download = '../Docs/ER.pdf';
+      // Append the anchor to the document, trigger a click on it, and then remove it.
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    });
+  </script>
+   <div class="pdf-container" style="margin-left:34%;">
+    <h2>El diagrama de clases de RovoBank</h2>
+    <br/>
+    <br/>
+    <iframe src="../Docs/diagramadeclases.pdf" width="600" height="500">
+    </iframe>
+  </div>
+  <br/>
+  <br/>
+  <button class="download-button" id="downloadBtn2">Descargar</button>
+  <br/>
+  <br/>
+  <script>
+       document.getElementById('downloadBtn2').addEventListener('click', function() {
+      // Create a temporary anchor element
+      const a = document.createElement('a');
+      // Replace the URL below with either a relative or absolute URL to your PDF file.
+      a.href = '../Docs/diagramadeclases.pdf';
+      // The download attribute tells the browser to download the file instead of navigating to it.
+      a.download = '../Docs/diagramadeclases.pdf';
+      // Append the anchor to the document, trigger a click on it, and then remove it.
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    });
+  </script>
+  <div class="pdf-container" style="margin-left:34%;">
+    <h2>Los Casos de Uso de RovoBank</h2>
+    <br/>
+    <br/>
+    <iframe src="../Docs/casosdeuso.pdf" width="600" height="500">
+    </iframe>
+  </div>
+  <br/>
+  <br/>
+  <button class="download-button" id="downloadBtn3">Descargar</button>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <script>
+       document.getElementById('downloadBtn3').addEventListener('click', function() {
+      // Create a temporary anchor element
+      const a = document.createElement('a');
+      // Replace the URL below with either a relative or absolute URL to your PDF file.
+      a.href = '../Docs/casosdeuso.pdf';
+      // The download attribute tells the browser to download the file instead of navigating to it.
+      a.download = '../Docs/casosdeuso.pdf';
+      // Append the anchor to the document, trigger a click on it, and then remove it.
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    });
+  </script>
+</div>
 <button id="scrollTopBtn" title="Ir arriba">↑</button>
     <footer>
     <div class="contacto-imagen">
