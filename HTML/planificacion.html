@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planificación - Desarrollo de una App Bancaria</title>
+    <title>Planificación - RovoBank</title>
 	<link rel="stylesheet" type="text/css" href="..\Estilos\estiloRB.css">
-
+  <script defer src="../JavaScript/scriptRB.js"></script>
 </head>
 <body>
+  <div id="sticky">
 <header>
     <div class="logo">
-    <img src="../Imágenes/imageRB.png" width="105" height="105"/>
+    <img id="logoImg" src="../Imágenes/imageRB.png" width="105" height="105"/>
     </div>
     
     <h1>Planificación</h1>
+    <button id="themeToggle" aria-label="Alternar modo oscuro">🌓</button>
 </header>
 <nav class="navbar">
-<script>
-  function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
-  }
-</script>
-  <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+  <button class="menu-toggle" aria-label="Abrir menú de navegación">☰ Menú</button>
   <div class="nav-links">
     <a href="..\index.html">Inicio</a>
     <a href="contexto.html">Contexto</a>
@@ -35,16 +31,25 @@
     <a href="documentacion.html">Documentación técnica</a>
   </div>
 </nav>
+</div>
 <img class="banner-image" src="../Imágenes/imageplan.jpg" alt="Banner de Objetivos" />
 
 
 
 <div class="container">
-<h1 style="margin-left: 50%; font-family: Sansation; color:#036763;  ">Planificación</h1>
-<p style="margin-left: 35%;">________________________________________________________________</p>
-<p>RovoBank empezó a programarse el 22 de Noviembre de 2024 y se terminó el 7 de Febrero de 2025, aquí tenemos el desarrollo en el tiempo de las principales tareas que se han ido ejecutando, <br/> en rojo se indican las más críticas.</p>
-<img src="../Imágenes/cronograma.png"/>
+<h1 class="mainheaderplanning">Planificación</h1>
+<hr>
+<p style="margin-left:4%;">RovoBank empezó a programarse el 22 de Noviembre de 2024 y se terminó el 7 de Febrero de 2025, aquí tenemos el desarrollo en el tiempo de las principales tareas que se han ido ejecutando, <br/> en rojo se indican las más críticas.</p>
+<br/>
+<br/>
+<img src="../Imágenes/cronograma.jpg" width="98%" height="98%"/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 </div>
+<button id="scrollTopBtn" title="Ir arriba">↑</button>
 <footer>
     <div class="contacto-imagen">
         <div class="contacto">

@@ -44,8 +44,6 @@ body.dark-mode #scrollTopBtn {
 
 /* ------------------- Header ------------------- */
 header {
-  position: sticky;
-  top: 0;
   background-color: #036763;
   background-image: url("../Imágenes/fondo.jpg");
   background-size: cover;
@@ -56,14 +54,24 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  z-index: 1000;
   transition: padding 0.3s ease, font-size 0.4s ease, background-color 0.3s ease;
+}
+
+/*----------Para que se muevan la cabecera y el navbar como un elemento solo-------------*/
+
+#sticky {
+
+    position: sticky;
+    z-index: 1000;
+    top:0;
+
 }
 
 header h1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 10px;
   margin: 0;
   font-family: Sansation;
   font-size: 40px;
@@ -76,12 +84,9 @@ header.shrink {
 
 /* ------------------- Navbar ------------------- */
 .navbar {
-  position: sticky;
-  top: 107px;
   background-color: #036763;
   font-family: Arial, sans-serif;
   font-size: 15px;
-  z-index: 999;
   margin: 0;
   padding: 0;
   transition: top 0.3s ease;

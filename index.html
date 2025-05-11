@@ -4,25 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto RovoBank</title>
-	<link rel="stylesheet" type="text/css" href=".\Estilos\estiloRB.css">
-   
+	<link rel="stylesheet" type="text/css" href="Estilos/estiloRB.css">
+  <script defer src="JavaScript/scriptRB.js"></script>
 </head>
 <body>
+  <div id="sticky">
 <header>
     <div class="logo">
-    <img src="Imágenes/imageRB.png" width="105" height="105"/>
+    <img id="logoImg" src="Imágenes/imageRB.png" alt="Logo RovoBank" width="105" height="105"/>
     </div>
-    
     <h1>Proyecto RovoBank</h1>
+    <button id="themeToggle" aria-label="Alternar modo oscuro">🌓</button>
 </header>
 <nav class="navbar">
-<script>
-  function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
-  }
-</script>
-  <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+  <button class="menu-toggle" aria-label="Abrir menú de navegación">☰ Menú</button>
   <div class="nav-links">
     <a href="index.html">Inicio</a>
     <a href="HTML/contexto.html">Contexto</a>
@@ -35,20 +30,24 @@
     <a href="HTML/documentacion.html">Documentación técnica</a>
   </div>
 </nav>
+</div>
 <img class="banner-image" src="Imágenes/dubai.jpg" alt="Banner de Objetivos" />
 
 
 
-	 <div class="container">
-        <h1 style="margin-left: 40%; font-family: Sansation; color:#036763;  ">Bienvenidos a RovoBank</h1>
-        <p style="margin-left: 30%;">________________________________________________________________</p>
-		<h4 style="margin-left: 40%; font-family: Sansation;">The App that helps you manage your bank</h4>
+	 <main class="container">
+        <h1 class="mainheader">Bienvenidos a RovoBank</h1>
+        <hr>
+		<h4 class="secondaryheader">The App that helps you manage your bank</h4>
         <br/>
-        <h1 style="margin-left: 45%; font-family: Sansation;" >Introducción</h1>
+        <h1 class="ternaryheader" >Introducción</h1>
         <br/>
-        <p id="parrafo1intro">Esta aplicación surge con la necesidad de crear un programa para gestionar los distintos aspectos de un banco. <br/>Detallamos en esta memoria el <strong>proceso</strong> que hemos seguido, punto por punto,
-        con los recursos que hemos tenido <br/> a nuestra disposición para desarrollar la misma.<br/><br/>No se escatimará en detalles sobre los datos de la gestión realizada hasta este momento, sin olvidar posibles puntos<br/>
-        ciegos que se hayan podido quedar en el camino durante el <strong>proceso</strong> de aprendizaje y resolución de problemas.
+        <p id="parrafo1intro"><strong>RovoBank</strong> es una exceelente aplicación para la gestión de activos bancarios, como por ejemplo, tarjetas, préstamos o cuentas.<br/>
+        La Web en la que te encuentras te da todos los detalles que necesitas para conocer más a fondo esta aplicación, cómo y por<br/> quién ha sido desarrollada o para qué 
+        se desarrolló. Tienes también a tu disposición muchos más datos interesantes sobre el<br/> <strong>desarrollo</strong> de la aplicación, incluidos <strong>documentos.</strong>
+        <br/>
+        <br/>
+        Esperamos que disfrutes tanto tu estancia en la Web como lo hemos hecho nosotros desarrollando <strong>RovoBank.</strong>
         </p>
         <br/>
         <br/>
@@ -59,9 +58,10 @@
         <br/>
         <br/>
         <br/>
-        <p style="text-align: center; font-family: Sansation">@copyright 2025 by RovoBank</p>
-    </div>
-<footer>
+        <p id="copyright">@copyright 2025 by RovoBank</p>
+    </main>
+    <button id="scrollTopBtn" title="Ir arriba">↑</button>
+    <footer>
     <div class="contacto-imagen">
         <div class="contacto">
             <h2 style="font-family: Sansation;">Contacto</h2>
@@ -74,6 +74,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>
