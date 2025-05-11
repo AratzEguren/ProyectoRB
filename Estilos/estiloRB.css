@@ -292,6 +292,85 @@ section {
   font-family: Sansation;
 }
 
+.mainheaderresources{
+  margin-left: 50%; 
+  font-family: Sansation; 
+  color:#036763; 
+}
+
+.secondaryheaderresources{
+   margin-left: 49%; 
+   font-family: Sansation; 
+}
+
+.sectionhumanresources{
+  background-color: #036763; 
+  padding: 1%;
+}
+
+.imghumanres{
+  width:7%; 
+  margin-left: 15%; 
+  border-radius: 60px;
+}
+
+.phumanres{
+  margin-top: 2%; 
+  color: #FFFFFF
+}
+
+.phumanres2{
+  margin-top: 2%; 
+  color: #036763;
+}
+
+.hardwarespecs{
+  display: flex; 
+  flex: center; 
+  gap: 10%; 
+  margin-left: 20%;
+}
+
+.softwarespecs{
+  display: flex; 
+  flex: center; 
+  gap: 5%; 
+  margin-left: 10%;
+}
+
+.softwarespecs2{
+  display: flex; 
+  flex: center; 
+  gap: 7%; 
+  margin-left: 10%;
+}
+
+.imghardware{
+  width:20%; 
+  height:20%; 
+  margin-left: 3%;
+}
+
+.imgsoftware{
+  width:20%; 
+  height:20%; 
+  margin-left: 3%;
+}
+
+.imgsoftware2{
+  width:15%; 
+  height:15%; 
+  margin-left: 3%;
+}
+
+#mainparagraphresources{
+  margin-left: 32%;
+}
+
+#secondaryparagraphresources{
+  margin-left: 40%;
+}
+
 #copyright {
   text-align: center; 
   font-family: Sansation;
