@@ -4,42 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presupuesto - Desarrollo de una App Bancaria</title>
-	<link rel="stylesheet" type="text/css" href="..\Estilos\estiloRB.css">
-  <script defer src="../JavaScript/scriptRB.js"></script>
+    <link rel="stylesheet" type="text/css" href="..\Estilos\estiloRB.css">
+    <link rel="stylesheet" type="text/css" href="..\Estilos\Presupuesto.css">
+    <script defer src="../JavaScript/scriptRB.js"></script>
 </head>
 <body>
-  <div id="sticky">
-<header>
-    <div class="logo">
-    <img id="logoImg" src="../Imágenes/imageRB.png" width="105" height="105"/>
-    </div>
-    
-    <h1>Presupuesto</h1>
-    <button id="themeToggle" aria-label="Alternar modo oscuro">🌓</button>
-</header>
-<nav class="navbar">
-  <button class="menu-toggle" aria-label="Abrir menú de navegación">☰ Menú</button>
-  <div class="nav-links">
-    <a href="..\index.html">Inicio</a>
-    <a href="contexto.html">Contexto</a>
-    <a href="objetivos.html">Objetivos</a>
-    <a href="planificacion.html">Planificación</a>
-    <a href="recursos.html">Recursos</a>
-    <a href="presupuesto.html">Presupuesto</a>
-    <a href="seguimiento.html">Seguimiento</a>
-    <a href="evaluacion.html">Evaluación</a>
-    <a href="documentacion.html">Documentación técnica</a>
-  </div>
-</nav>
-</div>
-<img class="banner-image" src="../Imágenes/objetivosimage.jpg" alt="Banner de Objetivos" />
-
-<div >
-            
-            <p>Meter cosas aqui</p>
+<div id="sticky">
+    <header>
+        <div class="logo">
+            <img id="logoImg" src="../Imágenes/imageRB.png" width="105" height="105"/>
         </div>
+
+        <h1>Presupuesto</h1>
+        <button id="themeToggle" aria-label="Alternar modo oscuro">🌓</button>
+    </header>
+    <nav class="navbar">
+        <button class="menu-toggle" aria-label="Abrir menú de navegación">☰ Menú</button>
+        <div class="nav-links">
+            <a href="..\index.html">Inicio</a>
+            <a href="contexto.html">Contexto</a>
+            <a href="objetivos.html">Objetivos</a>
+            <a href="planificacion.html">Planificación</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="presupuesto.html">Presupuesto</a>
+            <a href="seguimiento.html">Seguimiento</a>
+            <a href="evaluacion.html">Evaluación</a>
+            <a href="documentacion.html">Documentación técnica</a>
+        </div>
+    </nav>
+</div>
+<img class="banner-image" src="../Imágenes/presupuesto_banner.jpg" alt="Banner de Objetivos"/>
+
+<div>
+    <h2>Resumen del Presupuesto del Proyecto</h2>
+    <section class="presupuesto">
+        <table class="tabla-presupuesto">
+            <thead>
+            <tr>
+                <th>Categoría</th>
+                <th>Concepto</th>
+                <th>Desglose</th>
+                <th>Coste (€)</th>
+                <th>Cantidad</th>
+                <th>Subtotal (€)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Desarrollo -->
+            <tr>
+                <td rowspan="5">Desarrollo</td>
+                <td rowspan="5">Salario</td>
+                <td>Programador jefe</td>
+                <td>4.000</td>
+                <td rowspan="5">5</td>
+                <td rowspan="5">14.000</td>
+            </tr>
+            <tr>
+                <td>Programador Senior</td>
+                <td>3.500</td>
+            </tr>
+            <tr>
+                <td>Programador Junior</td>
+                <td>2.500</td>
+            </tr>
+            <tr>
+                <td>Programador Junior</td>
+                <td>2.500</td>
+            </tr>
+            <tr>
+                <td>Tester QA</td>
+                <td>2.500</td>
+            </tr>
+            <!-- Diseño -->
+            <tr>
+                <td rowspan="1">Diseño</td>
+                <td>Salario</td>
+                <td>Diseñador UI/UX</td>
+                <td>2.000</td>
+                <td>1</td>
+                <td>2.000</td>
+            </tr>
+
+            <!-- Licencias -->
+            <tr>
+                <td rowspan="3">Licencias</td>
+                <td>IDE</td>
+                <td>Netbeans</td>
+                <td>-</td>
+                <td>4</td>
+                <td rowspan="3">2.100</td>
+            </tr>
+            <tr>
+                <td>Licencia</td>
+                <td>Figma Pro</td>
+                <td>100</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Server</td>
+                <td>MySQL</td>
+                <td>2.000</td>
+                <td>1</td>
+            </tr>
+
+            <!-- Marketing -->
+            <tr>
+                <td rowspan="5">Marketing</td>
+                <td rowspan="4">Campañas en redes sociales</td>
+                <td>Facebook</td>
+                <td>200</td>
+                <td rowspan="4">4</td>
+                <td rowspan="5">1.350</td>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Instagram</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>TikTok</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Marca</td>
+                <td>Diseño de marca/logo</td>
+                <td>300</td>
+                <td>1</td>
+            </tr>
+
+            <!-- Total -->
+            <tr class="total">
+                <td colspan="5"><strong>Total General</strong></td>
+                <td><strong>19.450 €</strong></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+</div>
 <button id="scrollTopBtn" title="Ir arriba">↑</button>
-    <footer>
+<footer>
     <div class="contacto-imagen">
         <div class="contacto">
             <h2 style="font-family: Sansation;">Contacto</h2>
