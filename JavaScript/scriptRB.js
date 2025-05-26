@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', 'dark');
         console.debug("Dark mode enabled. Logo updated to:", logoImg.src);
       } else {
-        logoImg.src = 'Imágenes/imageRB.png';
+        logoImg.src = '/ProyectoRB/Imágenes/imageRB.png';
         localStorage.removeItem('theme');
         console.debug("Light mode enabled. Logo updated to:", logoImg.src);
       }
