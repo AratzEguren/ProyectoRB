@@ -1,14 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Check if the page is index.html or served from the root ("/")
-  const pathname = window.location.pathname;
-  const isIndexPage =
-    pathname === '/' ||
-    pathname.endsWith('/index.html') ||
-    pathname.endsWith('/index.htm');
-    
-  const pathPrefix = isIndexPage ? "" : "../";
-  console.debug("Current pathname:", pathname, "isIndexPage:", isIndexPage, "Calculated pathPrefix:", pathPrefix);
-
   // Elements selection
   const toggleBtn = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
@@ -67,13 +57,13 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
       if (document.body.classList.contains('dark-mode')) {
-        logoImg.src = pathPrefix + 'Imágenes/imageBlack.png';
-        console.debug("Dark mode enabled. Logo updated to:", logoImg.src);
+        logoImg.src = '/ProyectoRB/Imágenes/imageBlack.png';
         localStorage.setItem('theme', 'dark');
+        console.debug("Dark mode enabled. Logo updated to:", logoImg.src);
       } else {
-        logoImg.src = pathPrefix + 'Imágenes/imageRB.png';
-        console.debug("Light mode enabled. Logo updated to:", logoImg.src);
+        logoImg.src = 'Imágenes/imageRB.png';
         localStorage.removeItem('theme');
+        console.debug("Light mode enabled. Logo updated to:", logoImg.src);
       }
     });
   } else {
@@ -83,11 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // On page load, apply the saved theme and set the logo image accordingly.
   if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
-    logoImg.src = pathPrefix + 'Imágenes/imageBlack.png';
+    logoImg.src = '/ProyectoRB/Imágenes/imageBlack.png';
     console.debug("Loaded in dark mode. Logo set to:", logoImg.src);
   } else {
     document.body.classList.remove('dark-mode');
-    logoImg.src = pathPrefix + 'Imágenes/imageRB.png';
+    logoImg.src = '/ProyectoRB/Imágenes/imageRB.png';
     console.debug("Loaded in light mode. Logo set to:", logoImg.src);
   }
 });
