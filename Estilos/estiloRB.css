@@ -42,6 +42,114 @@ body.dark-mode #scrollTopBtn {
   background-color: #444;
 }
 
+
+body.dark-mode table,
+body.dark-mode th,
+body.dark-mode td {
+  color: #e0e0e0;         /* Light gray text */
+  border-color: #444;     /* Optional: darken the borders */
+}
+
+body.dark-mode .tabla-presupuesto {
+  background-color: #1e1e1e; /* Dark table background */
+}
+
+body.dark-mode .tabla-presupuesto th {
+  background-color: #014e47; /* Darker header background */
+  color: #ffffff;
+}
+
+body.dark-mode .tabla-presupuesto tr:nth-child(even) {
+  background-color: #2a2a2a; /* Alternate row background */
+}
+
+body.dark-mode .tabla-presupuesto .total {
+  background-color: #555;
+  color: #ffffff;
+}
+
+body.dark-mode .tabla-presupuesto .total td {
+  border-top: 2px solid #555;
+}
+
+body.dark-mode .objetivo {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .objetivo h2,
+body.dark-mode .objetivo h3,
+body.dark-mode .objetivo p,
+body.dark-mode .objetivo li {
+  color: #ffffff;
+}
+
+body.dark-mode .objetivo ul {
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+body.dark-mode .destacados {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  padding: 1em;
+  border-radius: 6px;
+}
+
+body.dark-mode .destacados h3 {
+  color: #00ffc8;
+}
+
+body.dark-mode .destacados ul {
+  background-color: transparent;
+  padding: 0.5em 1em;
+  margin: 0;
+  border-radius: 0;
+}
+
+body.dark-mode .destacados li {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Main container background and text color in dark mode */
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Section title */
+body.dark-mode .objetivos-especificos h2 {
+  color: #00ffc8;
+  border-bottom: 2px solid #00ffc8;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+/* Each objective box */
+body.dark-mode .objetivo-item {
+  background-color: #2a2a2a;
+  padding: 15px 20px;
+  border-left: 4px solid #00ffc8;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+/* Subheadings */
+body.dark-mode .objetivo-item h4 {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+/* Paragraphs */
+body.dark-mode .objetivo-item p {
+  color: #d0d0d0;
+  line-height: 1.5;
+}
+
 /* ------------------- Header ------------------- */
 header {
   background-color: #036763;
